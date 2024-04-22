@@ -9,6 +9,9 @@ body{
 .flex{
     display: flex;
 }
+.space-b{
+    justify-content: space-between;
+}
 .wrap{
     flex-wrap: wrap;
 }
@@ -21,4 +24,7 @@ ul{
 .jumbotron{
     justify-content: right;
     background-color: #080b12;
+}
+footer{
+    background-color: #282828;
 }
