@@ -20,11 +20,18 @@ body{
 .justify-content{
     justify-content: center;
 }
+img{
+    max-width: 100%;
+}
 .wrap{
     flex-wrap: wrap;
 }
 ul{
     list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 header{
     background-color: #000000;
@@ -40,19 +47,45 @@ main{
     margin: 0 0 110px 240px ;
     width:auto;
 }
+section > h1,
+section > p{
+    padding-bottom: 1rem;
+}
 .recent article img,
-.created article img{
-    height: 200px;
+.created article img,
+.popular article img{
+    max-height: auto;
     margin-bottom: 1rem;
 }
+.recent,
+.created,
+.popular{
+    padding-top: 2rem;
+}
+.recent{
+    justify-content: space-between;
+}
 .recent article,
-.created article{
-    padding: .5rem;
-    max-width: 16%;
+.created article,
+.popular article{
+    padding-right: .5rem;
+    max-width: 225px;
     text-align: center;
+}
+.recent article h2,
+.created article h2,
+.popular article h2{
+    font-size: 20px;
+    padding-bottom: .6rem;
 }
 .container{
     background-color: #141922;
+    margin: 0 1rem;
+}
+.container > *{
+    padding-bottom: 2rem;
+}
+.container nav ul li{
     padding: 1rem;
 }
 .jumbotron{
@@ -76,4 +109,14 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+}
+.song img{
+    max-width: 50px;
+}
+.foot{
+    align-items: center;
+    padding: 1rem;
+}
+@media screen and (ma) {
+    
 }
