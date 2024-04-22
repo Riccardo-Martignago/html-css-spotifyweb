@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    color: white;
+}
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    background-color: #141922;
+}
+.jumbotron{
+    justify-content: right;
+    background-color: #080b12;
+}
