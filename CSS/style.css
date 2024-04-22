@@ -12,11 +12,30 @@ body{
 .space-b{
     justify-content: space-between;
 }
+.justify-content{
+    justify-content: center;
+}
 .wrap{
     flex-wrap: wrap;
 }
 ul{
     list-style-type: none;
+}
+header{
+    background-color: #000000;
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+main{
+    margin: 0 0 110px 240px ;
+    width:auto
+    
 }
 .container{
     background-color: #141922;
@@ -27,4 +46,10 @@ ul{
 }
 footer{
     background-color: #282828;
+    position: fixed;
+    height: 110px;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
