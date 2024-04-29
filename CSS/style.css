@@ -34,9 +34,122 @@ ul{
 }
 a{
     text-decoration: none;
+    color: #5a5a5a;
+}
+.house::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 25px;
+    content: "\f015";
+}
+.lens::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 25px;
+    content: "\f002";
+}
+.library::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 25px;
+    content: "\e51e";
+}
+.plus::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 30px;
+    content: "\f0fe";
+}
+.download::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    content: "\f358";
+}
+.user::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    font-size: 25px;
+    content: "\f2bd";
+}
+.heart::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    content: "\f004";
+}
+.folder::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    content: "\f07b";
+}
+.p-list::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f0ca";
+}
+.pad::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 500;
+    content: "\e163";
+}
+.sound::before{
+    color: #a3a3a3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f028";
+}
+.play::before{
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    font-size: 36px;
+    content: "\f144";
+}
+.shuffle::before{
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f074";
+}
+.back::before{
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f048";
+}
+.next::before{
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f051";
+}
+.repeat::before{
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f2f9";
+}
+.bar{
+    color: #dcdcde;
+    width: 192px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin: 1rem 0;
+}
+.t-white{
     color: white;
 }
 header{
+    color: #5a5a5a;
     background-color: #000000;
     width: 240px;
     height: calc(100% - 105px);
@@ -49,8 +162,16 @@ header{
     justify-content: space-between;
     padding: 1.5rem;
 }
+.conte-head div img{
+    width: 145px;
+    margin-bottom: 1.5rem;
+}
+.conte-head nav ul,
+.conte-head nav ul li{
+    padding-bottom: 1rem;
+}
 main{
-    margin: 0 0 110px 240px ;
+    margin: 100px 0 110px 240px ;
     width:auto;
 }
 section > h1,
@@ -84,7 +205,7 @@ section > p{
 .recent article h2,
 .created article h2,
 .popular article h2{
-    font-size: 20px;
+    font-size: 19px;
     padding-bottom: .6rem;
 }
 .container{
@@ -95,13 +216,14 @@ section > p{
     padding-bottom: 2rem;
 }
 .container nav ul li{
-    padding: 1rem;
+    padding: .7rem;
 }
 .jumbotron{
-    position: sticky;
+    position: fixed;
     right: 0;
     height: 100px;
     left: 240px;
+    top:0;
     justify-content: right;
     background-color: #080b12;
 }
@@ -129,8 +251,102 @@ footer{
 .foot{
     height: 100%;
     align-content: center;
-    padding: 1rem;
+    padding: 0 .5rem;
 }
-@media screen and (ma) {
-    
+.foot ul li{
+    padding-left:1rem ;
+}
+#progress,
+#volume{
+    background: #5a5a5a;
+    border-radius: 13px;
+    height: 8px;
+}
+#volume{
+    width: 170px;
+}
+#progress{
+    width: 520px;
+}
+#progress:after,
+#volume:after{
+    content: '';
+    display: block;
+    background: #c1c1c1;
+    width: 30%;
+    height: 100%;
+    border-radius: 9px;
+}
+.player-nav ul li{
+    padding: 0 1rem;
+}
+.player-nav{
+    padding-bottom: 1rem;
+}
+.p-1-rem{
+    padding: 1rem 0;
+}
+.player-nav ul{
+    justify-content: center;
+    align-items: center;
+}
+.align-items{
+    align-items: center;
+}
+.timer span{
+    padding: 0 1.5rem;
+}
+.brano > *{
+    padding-right: 2.5rem;
+}
+.brano article div{
+    font-size: 11px;
+    padding-left: 1rem;
+}
+.brano div span{
+    padding-right: 1rem;
+}
+.song div p{
+    color: #a3a3a3;
+}
+/*medium*/
+@media screen and (max-width:991px) {
+    .recent,
+    .created,
+    .popular{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .recent article img,
+    .created article img,
+    .popular article img{
+        width: auto;
+    }
+    .recent article,
+    .created article,
+    .popular article{
+        max-width: 177px;
+        padding-top: 1rem;
+    }
+    .recent{
+        justify-content: left;
+    }
+    #volume{
+        width: 162px;
+    }
+    #progress{
+        width: 307px;
+    }
+}
+/*small*/
+@media screen and (max-width:767px) {
+    .container {
+        width: auto;
+    }
+}
+/*x-small*/
+@media screen and (max-width:575px) {
+    .container {
+        width: auto;
+    }
 }

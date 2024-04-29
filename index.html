@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
@@ -16,24 +17,24 @@
                 <img src="./spotify/img/logo.svg" alt="Logo Spotify">
                 <nav>
                     <ul>
-                        <li>
+                        <li class="house">
                             <a href="">Home</a>
                         </li>
-                        <li>
+                        <li class="lens">
                             <a href="">Cerca</a>
                         </li>
-                        <li>
+                        <li class="library">
                             <a href="">La tua libreria</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <h2>
+                            <h3 class="t-white">
                                 PLAYLIST
-                            </h2>
+                            </h3>
                         </li>
-                        <li>
-                            simbol Crea Playlist
+                        <li class="plus">
+                            Crea Playlist
                         </li>
                         <li>
                             Nome Playlist
@@ -60,11 +61,11 @@
                 </nav>
             </div>
             <div>
-                <p>
+                <p class="download">
                     Installa app
                 </p>
                 <div class="bar"></div>
-                <p class="user"> 
+                <p class="user t-white"> 
                     Johon Doe
                 </p>
             </div>
@@ -208,73 +209,51 @@
     </main>
     <footer>
         <div class="foot flex space-b">
-            <div class="flex">
-                <article class="song flex">
+            <div class="brano flex justify-content align-items">
+                <article class="song flex justify-content align-items">
                     <img src="./spotify/img/sinister.jpeg" alt="Immagine Sinister">
                     <div>
-                        <h2>
+                        <h3>
                             Sinister
-                        </h2>
+                        </h3>
                         <p>
                             Brano Nome
                         </p>
                     </div>
                 </article>
                 <div>
-                    <p>
-                        Simbol
-                    </p>
-                    <p>
-                        Simbol
-                    </p>
+                    <span class="heart"></span>
+                    <span class="folder"></span>
                 </div>
             </div>
-            <div>
-                <nav>
+            <div class="flex column justify-content">
+                <nav class="player-nav">
                     <ul class="flex">
-                        <li>
-                            simbol
-                        </li>
-                        <li>
-                            simbol
-                        </li>
-                        <li>
-                            simbol
-                        </li>
-                        <li>
-                            simbol
-                        </li>
-                        <li>
-                            simbol
-                        </li>
+                        <li class="shuffle"></li>
+                        <li class="back"></li>
+                        <li class="play"></li>
+                        <li class="next"></li>
+                        <li class="repeat"></li>
                     </ul>
                 </nav>
-                <div class="flex">
+                <div class=" timer flex align-items">
                     <span>
                         0:25
                     </span>
-                    <div>
-                        bar
-                    </div>
+                    <div id="progress"></div>
                     <span>
                         4:35
                     </span>
                 </div>
             </div>
-            <div>
-                <span>
-                    simbol
-                </span>
-                <span>
-                    simbol
-                </span>
-                <span>
-                    simbol
-                </span>
-                <div>
-                    bar
-                </div>
-            </div>
+            <ul class="flex justify-content align-items">
+                <li class="p-list"></li>
+                <li class="pad"></li>
+                <li class="sound"></li>
+                <li>
+                    <div id="volume"></div>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
